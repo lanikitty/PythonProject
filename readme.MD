@@ -4,7 +4,7 @@
 
 ##Literals
 
-String Literals = 'Raj' 'Rahul' 'Rahul'
-Boolean Literals = True False
-Integer Literals = 234 565
-Float Literals = 34.365 556.33
+String Literals = 'Raj' 'Rahul' 'Rahul' <br>
+Boolean Literals = True False <br>
+Integer Literals = 234 565 <br>
+Float Literals = 34.365 556.33 <br>
