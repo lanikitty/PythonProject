@@ -1,17 +1,3 @@
-#Python is a multi paradigm programming language
-
-##python is popular functional way of coding
-
-##Literals
-
-String Literals = 'Raj' 'Rahul' 'Rahul' <br/>
-Boolean Literals = True False <br/>
-Integer Literals = 234 565 <br/>
-Float Literals = 34.365 556.33 <br/>
-
-##arithmetic operators
-+, - , * , / , % , ** , //
-
 # Python is a multi paradigm programming language
 
 ## python is popular functional way of coding
@@ -133,3 +119,60 @@ while condition:
 5. Functions can have default parameters
 6. Functions cannot be overloaded
 7. A variable can hold reference for a function
+
+
+## global and local variables
+
+By default any variable declared within a function acts as local variable
+even though same variable available outside the function
+
+Yet python facilitates developer to refer to the global version of the variable
+by using a key word called global
+
+## *args and **kwargs
+
+1. use * if you are not sure about no of arguments, while passing parameters
+we can send as many values as we want . the parameters are collected as a tuple
+
+2. similarly if you want to pass keyword arguments and collect it as dictionary
+in the function definition use **
+
+## Callback functions
+
+ A function which is passed as parameter to another function is called as callback function
+
+ it is called so because it meant to be called back the function that is being called
+ currently
+
+ # Closures
+
+ In most functional languages , defining a function within a function is possible
+
+ and the inner function always can access variable which are in the context of outer function
+
+ and those variables are accessible in the inner function even after outer function
+ finished execution
+
+ and outer function cannot access variables which are part of inner function
+
+
+ ### nonlocal keyword
+
+ withing in the innerfunction if you do not want to create a variable in local scope
+ if you want to create in outer function scope use nonlocal keyword
+
+ ### map, reduce and filter
+
+ #### Map 
+    
+   * processing each list item individually
+   *  for each item processed we return a result
+   *  for a map operation no of inputs = no of outputs
+   *  that is if n items is process the result would also be n items
+
+#### Filter
+  
+   * process each item individually
+   * for each item processed we need to return a result[ only true or false]
+   * for a filter no of inputs >= no of outputs
+   * filter will remove the processed individual elements which returned false 
