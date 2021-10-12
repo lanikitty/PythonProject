@@ -32,3 +32,13 @@ print(not 234.23)
 print(not "Jay")
 print(not "")
 print(not None)
+
+##bitwise operators
+print(12 & 4) #1100 and 0100 -> 0100
+print(12 | 4) #1100
+print(15 ^ 12) #1111 and 1100
+print(15 & 12) #1100 -> 12
+print(15<<2) #15 - 1111 --> 15<<2 111100
+print(15>>2) #11 -> 3
+print(~12) #-13
+print(~-12)
