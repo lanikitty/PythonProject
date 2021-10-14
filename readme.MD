@@ -189,3 +189,110 @@ In python context, a module in nothing collection of python files
 in python files, we will have variables, functions, classes
 we can import these variables, functions and classes in other modules
 So Module is a logical context to group functions, variables and classes
+
+### Object oriented programming in python
+
+Any language which supports four essential feature can claim itself to support
+OOP
+
+* encapsulation
+* abstraction
+* polymorphism
+* inheritance
+
+**Encapsulation**
+
+data and functions can be group together as one unit and can be named as
+an entity it is called encapsulation
+
+
+**Abstraction**
+
+Allowing only the essential features to be accessed hiding the implementation logic
+
+In python 
+
+if you prefix the instance member with __[doube underscore] it is treated as private
+the member has no visibility outside the class
+
+if you prefix the instance member with _ [single underscore] it is treated as protected
+the member has visibility within in the class and subclass but not for an external class
+
+**Polymorphism**
+
+Abilty to take more than form with one name
+
+In Short, One name/symbol many forms
+
+In common, many oop language supports this feature by using the concept
+
+* method overloading
+* method overriding [super , sub classes having same method]
+* operator overloading [one operator multiple purposes]
+* constructor overloading
+
+out of the above features python support method overriding and  operator overloading
+
+python does not support method/constructor overloading directly,yet it can be achieved
+by using concepts like
+
+   * methods with default parameter
+   * methods with arbitrary parameters using [*] and [**] as paramters
+
+ **Inheritance**
+   
+   * If a class extends features of another class except private features
+   it is called inhertance
+
+   * since a class inherits features , the class is called as subclass or child class
+
+   * an object for child class can have access to both parent and child members
+
+   Python supports
+   1. Single Inheritance
+   2. Hierarchial inheritance
+   3. Multi level Inheritance
+   4. Multiple inheritance
+
+   ### Python Exception  Handling
+     In python we have lof pre defined exception to match various scenarios
+
+     To handle exceptions in python , we use
+     * try
+     * raise
+     * except
+     * finally
+     * else 
+
+     keywords
+
+     **try**
+
+     Whenever there is possibility of exception , we block the chunk
+     of code with try 
+   
+    **raise**
+
+    Upon an exception case, if we want to explicitly throw an exception we
+    use raise keyword
+
+    **except**
+
+    this block is used to catch and handle exception object
+
+    **finally**
+
+    used to define a block which executes regardles of exception
+
+    **else**
+    any logic which has to run only if no exception occured can be kept
+    in else block
+
+    to create our own exception we extend exception
+
+    ```
+    class MyError(Exception):
+       #code
+   ```
+
+   ### Python File Handling
